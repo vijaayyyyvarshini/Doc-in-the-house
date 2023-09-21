@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap");
+.character-card {
+	background-color: whitesmoke;
+	border-radius: 20px;
+	height: 70vh;
+	width: 70vw;
+	min-width: 500px;
+	min-height: 300px;
+	align-self: center;
+	text-align: center;
+	padding: 20px;
+	overflow-y: scroll;
+}
+.message-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.character-card-flex-box {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.flex-item {
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+.character-container {
+	background-color: #940543;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 15px;
+}
+
+.character {
+	object-fit: contain;
+	height: 15vh;
+	min-height: 50px;
+	padding: 20px 20px 0px 20px;
+	transition: 0.3s;
+}
+@media screen and (max-width: 800px) {
+	.character {
+		height: 10vh;
+	}
+}
+.character-name {
+	font-size: 2rem;
+	margin: 0px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
+.character:hover {
+	padding: 30px;
+}
+.select-character-title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 2rem;
+	margin: 16px;
+}
+.message-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 12px;
+	color: #940543;
+	line-height: 1.6;
+	margin: 0px;
+}
+.go-button {
+	display: inline-block;
+	-webkit-border-radius: 21;
+	-moz-border-radius: 21;
+	border-radius: 21px;
+	-webkit-box-shadow: 2px 2px 4px #666666;
+	-moz-box-shadow: 2px 2px 4px #666666;
+	box-shadow: 2px 2px 4px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #940543;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border-style: solid;
+	border-color: #ffffff00;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.go-button:hover {
+	background-color: white;
+	border-style: solid;
+	border-color: #940543;
+	color: #940543;
+	cursor: pointer;
+	text-decoration: none;
+	user-select: none;
+}
